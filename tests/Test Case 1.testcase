@@ -107,12 +107,26 @@
                 <argument id="interactionDescription">
                   <value class="value" valueClass="string">Click the New_ button</value>
                 </argument>
+                <argument id="ieClickMethod">
+                  <value class="value" valueClass="string">Default</value>
+                </argument>
               </arguments>
               <generatedParameters>
-                <apiParam group="value" name="hover" title="Hover before Clicking">
+                <apiParam group="value" name="hover" seq="10000" title="Hover before Clicking">
                   <summary>Whether the mouse should hover over the field before it is clicked.</summary>
                   <type>
                     <booleanType/>
+                  </type>
+                </apiParam>
+                <apiParam group="value" name="ieClickMethod" seq="10001" title="IE Click Method">
+                  <summary>How the click should be executed for Internet Explorer.</summary>
+                  <type>
+                    <choiceType>
+                      <constraints>
+                        <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                        <valueConstraint name="valuesSourceDependencies">com.provar.core.model.ui.api.ClickMethod</valueConstraint>
+                      </constraints>
+                    </choiceType>
                   </type>
                 </apiParam>
               </generatedParameters>
@@ -158,7 +172,7 @@
       <clauses>
         <clause name="substeps" testItemId="7">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="b89e2b5d-8a05-46d3-bedc-cc946ff8b5ab" name="UiDoAction" testItemId="8" title="Set the Last Name field to LastName">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="b89e2b5d-8a05-46d3-bedc-cc946ff8b5ab" name="UiDoAction" testItemId="8" title="Set the Last Name field to {UniqueId(10, ALPHA)}">
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?name=LastName&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DLead%26field%3DLastName"/>
@@ -167,7 +181,16 @@
                   <value class="uiInteraction" uri="ui:interaction?name=set"/>
                 </argument>
                 <argument id="value">
-                  <value class="value" valueClass="string">LastName</value>
+                  <value class="funcCall" id="UniqueId">
+                    <argument id="length">
+                      <value class="value" valueClass="decimal">10</value>
+                    </argument>
+                    <argument id="format">
+                      <value class="variable">
+                        <path element="ALPHA"/>
+                      </value>
+                    </argument>
+                  </value>
                 </argument>
                 <argument id="blur">
                   <value class="value" valueClass="boolean">true</value>
@@ -192,7 +215,7 @@
                 </argument>
                 <argument id="locatorParams"/>
                 <argument id="interactionDescription">
-                  <value class="value" valueClass="string">Set the Last Name field to LastName</value>
+                  <value class="value" valueClass="string">Set the Last Name field to {UniqueId(10, ALPHA)}</value>
                 </argument>
               </arguments>
               <generatedParameters>
