@@ -15,6 +15,7 @@ on:
 jobs:
   # This workflow contains a single job called "provar_regression"
   provar_regression:
+    name: "Regression"
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
@@ -30,7 +31,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-        - uses: actions/checkout@v2.4.2
+        - uses: actions/checkout@v4
         - uses: actions/setup-java@v3.4.1
           with:
             java-version: '11'
@@ -57,12 +58,13 @@ jobs:
           with:
             # Artifact name
             name: TestResults # optional, default is artifact
-            # A file, directory or wildcard pattern that describes what to upload
+            # A file, directory or wildcard pattern that describes what to upload - path must already exist!
             path: '**/ANT/Results'
             # The desired behavior if no files are found using the provided path.
             if-no-files-found: error
             retention-days: 14 # optional
-  # This workflow contains a single job called "test_results"
+  
+  # This workflow contains a single job called "test_results" visible in the Actions tab as "Publish Test Results"
   test_results:
               name: "Publish Test Results"
               needs: provar_regression
