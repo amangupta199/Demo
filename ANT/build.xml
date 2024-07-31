@@ -1,18 +1,12 @@
 <project default="runtests">
-<<<<<<< HEAD
-	<property name="version" value="2.303.4.0"/>
-=======
+
 	<property name="version" value="2.13.2"/>
->>>>>>> branch 'master' of https://github.com/TaraProvar/Demo.git
 	<property environment="env"/>
 	<property name="provar.home" value="${env.PROVAR_HOME}"/>
-	<property name="testproject.home" value="Test"/>
-	<property name="testproject.results" value="Test/ANT/Results"/>
+	<property name="testproject.home" value=".."/>
+	<property name="testproject.results" value="../ANT/Results"/>
 	<property name="secrets.password" value="${env.ProvarSecretsPassword}"/>
-<<<<<<< HEAD
-=======
-	
->>>>>>> branch 'master' of https://github.com/TaraProvar/Demo.git
+
 	<echo message="provar home is: ${provar.home}"/>
 	<echo message="smtp home is: ${env.SMTP_PATH}"/>
 
@@ -38,10 +32,6 @@
 				pluginOutputlevel="WARNING"
 				stopTestRunOnError="false"
 				secretsPassword="${secrets.password}"
-<<<<<<< HEAD
-=======
-				testEnvironmentSecretsPassword="${testenvironment.secretspassword}"
->>>>>>> branch 'master' of https://github.com/TaraProvar/Demo.git
 				licensePath="${env.LICENSE_PATH}/.licenses"
 				smtpPath="${env.SMTP_PATH}"
 		>
@@ -51,7 +41,5 @@
 			<planFeature name="EMAIL" type="NOTIFICATION" enabled="true"/>
 
 		</Run-Test-Case>
-
 	</target>
-
 </project>
