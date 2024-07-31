@@ -6,10 +6,11 @@
 	<property name="secrets.password" value="${env.ProvarSecretsPassword}"/>
 	<property name="testenvironment.secretspassword" value="${env.ProvarSecretsPassword_EnvName}"/>
 	
+	<echo message="provar home is: ${provar.home}"/>
+	<echo message="smtp home is: ${env.SMTP_PATH}"/>
 	
 	<taskdef name="Provar-Compile" classname="com.provar.testrunner.ant.CompileTask" classpath="${provar.home}/ant/ant-provar.jar"/>
 	<taskdef name="Run-Test-Case" classname="com.provar.testrunner.ant.RunnerTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar"/>
-	<taskdef name="Test-Cycle-Report" classname="com.provar.testrunner.ant.TestCycleReportTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar"/>
 	
 	<target name="runtests">
 	
@@ -20,25 +21,24 @@
 				resultsPath="${testproject.results}" 
 				resultsPathDisposition="Increment" 
 				testEnvironment="" 
-				webBrowser="Chrome" 
+				webBrowser="${env.BROWSER}" 
 				webBrowserConfiguration="Full Screen"
 				webBrowserProviderName="Desktop"
 				webBrowserDeviceName="Full Screen" 
-				excludeCallableTestCases="true" 
-				salesforceMetadataCache="Reuse" 
-				projectCachePath="../../.provarCaches"
+				salesforceMetadataCache="Reload" 
+				projectCachePath="${env.CI_PROJECT_DIR}/ProvarCaches/.provarCaches"
 				testOutputlevel="BASIC" 
 				pluginOutputlevel="WARNING"
 				stopTestRunOnError="false"
 				secretsPassword="${secrets.password}"
 				testEnvironmentSecretsPassword="${testenvironment.secretspassword}"
-				sendEmail="NO"
-				invokeTestRunMonitor="true"
+				smtpPath="${env.SMTP_PATH}"
 				>
 		
-			<fileset id="testcases" dir="../tests"></fileset>
-			<emailProperties sendEmail="false" primaryRecipients="" ccRecipients="" bccRecipients="" emailSubject="Provar test run report" attachExecutionReport="false" attachZip="false"/>
+			<fileset id="testplan" dir="../plans/${env.PLAN_NAME}"></fileset>
+			<planFeature name="PDF" type="OUTPUT" enabled="true"/>
+			<planFeature name="PIECHART" type="OUTPUT" enabled="true"/>
+			<planFeature name="EMAIL" type="NOTIFICATION" enabled="true"/>
 		</Run-Test-Case>
-
 	</target>
 </project>
