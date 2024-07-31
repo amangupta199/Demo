@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testProject guid="bfed12bb-ef04-4278-8c5d-174e43bdc1c8" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop">
-  <title>/Scratch/.testproject</title>
+<testProject secretsEncryption="JASYPT" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop">
+  <title>/Test/.testproject</title>
   <configPath>config</configPath>
   <testsPath>tests</testsPath>
   <testPlansPath>plans</testPlansPath>
@@ -11,9 +11,10 @@
   <connectionClasses>
     <connectionClass name="sf">
       <connections>
-        <connection id="88f7e127-691b-416e-951d-1ae57a92063e" name="DemoOrg">
+        <connection id="e8fa6999-9db3-40ec-8688-5b801defa595" name="Admin">
+          <summary/>
           <connectionUrls>
-            <connectionUrl secureStorageNodeId="dc7dafd5-a6d2-4ef2-abde-913fe32350f0" url="sf:user=demo@provartesting.com;password={password};environment=PROD_DEV;lightningMode=true"/>
+            <connectionUrl secureStorageNodeId="28dced85-e4e6-44bc-8019-7858d7d9af84" url="sf:user=aman.gupta@provartesting.com;password={password};environment=PROD_DEV;lightningMode=true"/>
           </connectionUrls>
         </connection>
       </connections>
