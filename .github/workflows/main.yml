@@ -49,7 +49,7 @@ jobs:
             ls -la ${{ env.PROVAR_HOME }}
       
         - name: Run Provar Tests
-          run: xvfb-run ant -f ${{ github.workspace }}/ANT/build.xml
+          run: xvfb-run ant -f ${{ github.workspace }}/Test/ANT/build.xml
         
         
         - name: Upload Test Results Folder
