@@ -3,8 +3,8 @@
 	<property name="version" value="2.13.2"/>
 	<property environment="env"/>
 	<property name="provar.home" value="${env.PROVAR_HOME}"/>
-	<property name="testproject.home" value="Test/"/>
-	<property name="testproject.results" value="Test/ANT/Results"/>
+	<property name="testproject.home" value="Demo"/>
+	<property name="testproject.results" value="Demo/ANT/Results"/>
 	<property name="secrets.password" value="${env.ProvarSecretsPassword}"/>
 
 	<echo message="provar home is: ${provar.home}"/>
