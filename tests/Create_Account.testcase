@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testCase id="5">
+<testCase guid="30681ba9-3275-457c-93b9-28e57e6468f1" id="5">
   <summary/>
   <steps>
-    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" name="StepGroup" testItemId="31" title="Connection">
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="74547024-0b3e-4775-a7e5-8378833387fe" name="StepGroup" testItemId="31" title="Connection">
       <arguments>
         <argument id="description">
           <value class="value" valueClass="string">Connection</value>
@@ -11,7 +11,7 @@
       <clauses>
         <clause name="hidden" testItemId="32">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="4" title="Salesforce Connect: Admin (Test)">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="315122be-adb2-4309-b0db-b7be758e75cc" name="ApexConnect" testItemId="4" title="Salesforce Connect: Admin (Test)">
               <arguments>
                 <argument id="connectionName">
                   <value class="value" valueClass="string">Admin</value>
@@ -56,7 +56,7 @@
         </clause>
       </clauses>
     </apiCall>
-    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" name="StepGroup" testItemId="6" title="Test Data">
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="f757e105-4932-4cb2-b863-8068ffab91ec" name="StepGroup" testItemId="6" title="Test Data">
       <arguments>
         <argument id="description">
           <value class="value" valueClass="string">Test Data</value>
@@ -65,7 +65,7 @@
       <clauses>
         <clause name="hidden" testItemId="7">
           <steps>
-            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="1" title="Set Values: AccountName">
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="e0898810-19ef-49c3-9a80-f3fa9347bd75" name="SetValues" testItemId="1" title="Set Values: AccountName">
               <arguments>
                 <argument id="values">
                   <value class="valueList" mutable="Mutable">
@@ -93,7 +93,7 @@
                 </argument>
               </arguments>
             </apiCall>
-            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="9" title="Set Values: Website">
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="02fe38da-4e94-4a98-ab0c-affa9b6bc881" name="SetValues" testItemId="9" title="Set Values: Website">
               <arguments>
                 <argument id="values">
                   <value class="valueList" mutable="Mutable">
@@ -112,7 +112,7 @@
                 </argument>
               </arguments>
             </apiCall>
-            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="10" title="Set Values: Industry">
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="11315507-5d08-4007-bafb-3cb7b167e7ad" name="SetValues" testItemId="10" title="Set Values: Industry">
               <arguments>
                 <argument id="values">
                   <value class="valueList" mutable="Mutable">
@@ -131,7 +131,7 @@
                 </argument>
               </arguments>
             </apiCall>
-            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="36" title="Set Values: Active">
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="8f24ca56-82aa-4136-9621-9273e4c4115b" name="SetValues" testItemId="36" title="Set Values: Active">
               <arguments>
                 <argument id="values">
                   <value class="valueList" mutable="Mutable">
@@ -150,7 +150,7 @@
                 </argument>
               </arguments>
             </apiCall>
-            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="37" title="Set Values: SLA">
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="7c20bc6d-a461-42cd-8bf8-0d5fe151abb6" name="SetValues" testItemId="37" title="Set Values: SLA">
               <arguments>
                 <argument id="values">
                   <value class="valueList" mutable="Mutable">
@@ -169,7 +169,7 @@
                 </argument>
               </arguments>
             </apiCall>
-            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="38" title="Set Values: SLAExpirationDate">
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="e2cd8f86-b06d-44a0-9e4e-47cb538bf3d0" name="SetValues" testItemId="38" title="Set Values: SLAExpirationDate">
               <arguments>
                 <argument id="values">
                   <value class="valueList" mutable="Mutable">
@@ -197,7 +197,7 @@
                 </argument>
               </arguments>
             </apiCall>
-            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" name="SetValues" testItemId="39" title="Set Values: SLASerialNumber">
+            <apiCall apiId="com.provar.plugins.bundled.apis.control.SetValues" guid="fc78c47f-95f5-44aa-bd35-eb5509421aec" name="SetValues" testItemId="39" title="Set Values: SLASerialNumber">
               <arguments>
                 <argument id="values">
                   <value class="valueList" mutable="Mutable">
@@ -229,7 +229,7 @@
         </clause>
       </clauses>
     </apiCall>
-    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" name="StepGroup" testItemId="18" title="Create Account">
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="88017786-83e1-4cd7-b5db-378fefc98e3b" name="StepGroup" testItemId="18" title="Create Account">
       <arguments>
         <argument id="description">
           <value class="value" valueClass="string">Create Account</value>
@@ -238,7 +238,7 @@
       <clauses>
         <clause name="hidden" testItemId="19">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="2" title="On SF Account New screen">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="b0469fed-b091-4630-9785-2420b6410db2" name="UiWithScreen" testItemId="2" title="On SF Account New screen">
               <arguments>
                 <argument id="uiConnectionName">
                   <value class="value" valueClass="string">Admin</value>
@@ -275,7 +275,7 @@
               <clauses>
                 <clause name="substeps" testItemId="3">
                   <steps>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="5" title="Set the Account Name field to {AccountName}">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="0df54070-2ac8-4afc-ae0e-90d94596c2f2" name="UiDoAction" testItemId="5" title="Set the Account Name field to {AccountName}">
                       <arguments>
                         <argument id="locator">
                           <value class="uiLocator" uri="ui:locator?name=Name&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DAccount%26field%3DName"/>
@@ -329,7 +329,7 @@
                         </apiParam>
                       </generatedParameters>
                     </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="34" title="Set the Active picklist to {Active}">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="47e6cec6-38c3-459a-98ab-2554fd563d2b" name="UiDoAction" testItemId="34" title="Set the Active picklist to {Active}">
                       <arguments>
                         <argument id="locator">
                           <value class="uiLocator" uri="ui:locator?name=Active__c&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DAccount%26field%3DActive__c"/>
@@ -383,7 +383,7 @@
                         </apiParam>
                       </generatedParameters>
                     </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="12" title="Set the Website field to {Website}">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="79a45322-be74-4ae1-82bd-3e19dd9c418a" name="UiDoAction" testItemId="12" title="Set the Website field to {Website}">
                       <arguments>
                         <argument id="locator">
                           <value class="uiLocator" uri="ui:locator?name=Website&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DAccount%26field%3DWebsite"/>
@@ -432,7 +432,7 @@
                         </apiParam>
                       </generatedParameters>
                     </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="13" title="Set the Industry picklist to {Industry}">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="48fb3415-1d72-4102-8cff-465efb97a3b5" name="UiDoAction" testItemId="13" title="Set the Industry picklist to {Industry}">
                       <arguments>
                         <argument id="locator">
                           <value class="uiLocator" uri="ui:locator?name=Industry&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DAccount%26field%3DIndustry"/>
@@ -486,7 +486,7 @@
                         </apiParam>
                       </generatedParameters>
                     </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="43" title="Set the SLA picklist to {SLA}">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="2ac5beba-ce41-485d-a516-c1dd41371684" name="UiDoAction" testItemId="43" title="Set the SLA picklist to {SLA}">
                       <arguments>
                         <argument id="locator">
                           <value class="uiLocator" uri="ui:locator?name=SLA__c&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DAccount%26field%3DSLA__c"/>
@@ -540,7 +540,7 @@
                         </apiParam>
                       </generatedParameters>
                     </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="42" title="Set the SLA Expiration Date field to {SLAExpirationDate}">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="d3ac2cd2-64a7-4acc-b999-b6d33e74d8de" name="UiDoAction" testItemId="42" title="Set the SLA Expiration Date field to {SLAExpirationDate}">
                       <arguments>
                         <argument id="locator">
                           <value class="uiLocator" uri="ui:locator?name=SLAExpirationDate__c&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DAccount%26field%3DSLAExpirationDate__c"/>
@@ -589,7 +589,7 @@
                         </apiParam>
                       </generatedParameters>
                     </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="40" title="Set the SLA Serial Number field to {SLASerialNumber}">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="5a512330-b464-4f57-bee2-264bafa8e8c0" name="UiDoAction" testItemId="40" title="Set the SLA Serial Number field to {SLASerialNumber}">
                       <arguments>
                         <argument id="locator">
                           <value class="uiLocator" uri="ui:locator?name=SLASerialNumber__c&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DAccount%26field%3DSLASerialNumber__c"/>
@@ -643,7 +643,7 @@
                         </apiParam>
                       </generatedParameters>
                     </apiCall>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" name="UiDoAction" testItemId="14" title="Click the Save button">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="01098e07-05e7-40fc-b8db-61765d7618e7" name="UiDoAction" testItemId="14" title="Click the Save button">
                       <arguments>
                         <argument id="locator">
                           <value class="uiLocator" uri="ui:locator?name=save&amp;binding=sf%3Aui%3Abinding%3Aobject%3Fobject%3DAccount%26action%3Dsave"/>
@@ -717,7 +717,7 @@
         </clause>
       </clauses>
     </apiCall>
-    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" name="StepGroup" testItemId="26" title="Validate Account is created">
+    <apiCall apiId="com.provar.plugins.bundled.apis.control.StepGroup" guid="cc48cf94-f6a5-4ab1-8009-b9baa01535bf" name="StepGroup" testItemId="26" title="Validate Account is created">
       <arguments>
         <argument id="description">
           <value class="value" valueClass="string">Validate Account is created</value>
@@ -726,7 +726,7 @@
       <clauses>
         <clause name="hidden" testItemId="27">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" name="UiWithScreen" testItemId="44" title="On SF Account View screen">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="684c9e0c-b5fa-4171-aff1-9b372d8c87c5" name="UiWithScreen" testItemId="44" title="On SF Account View screen">
               <arguments>
                 <argument id="uiConnectionName">
                   <value class="value" valueClass="string">Admin</value>
@@ -758,7 +758,7 @@
               <clauses>
                 <clause name="substeps" testItemId="45">
                   <steps>
-                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiAssert" isTitleUpdated="true" name="UiAssert" testItemId="47" title="Assert: Account Name">
+                    <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiAssert" guid="1b2c7ded-e7f8-4c2d-a6ee-2a41b7fe4fc8" isTitleUpdated="true" name="UiAssert" testItemId="47" title="Assert: Account Name">
                       <arguments>
                         <argument id="fieldAssertions">
                           <value class="valueList" mutable="Mutable">
