@@ -27,6 +27,7 @@ jobs:
          LICENSE_PATH: ${{ github.workspace }}/Provar
          SMTP_PATH: ${{ github.workspace }}/Test/.smtp
          PLAN_NAME: SmokeTest
+         PROJECT_HOME: ${{ github.workspace }}
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
